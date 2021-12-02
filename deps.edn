@@ -1,0 +1,2 @@
+{:deps
+ {io.github.ctse-r7/shadow-cljs {:git/sha "d10efe60a34803eb657b3f0bb9187a7f01d78491"}}}
