@@ -1,2 +1,12 @@
 {:deps
- {io.github.ctse-r7/shadow-cljs {:git/sha "d10efe60a34803eb657b3f0bb9187a7f01d78491"}}}
+ {shadow-cljs/shadow-cljs {:git/url "https://github.com/ctse-r7/shadow-cljs.git"
+                           :sha "38f2d1ae847e6e89935ed4774f0e41a0936572eb"}}
+
+ :aliases {:nREPL
+           {:extra-deps
+            {nrepl/nrepl {:mvn/version "0.8.3"}
+             cider/piggieback {:mvn/version "0.4.2"}}
+            :main-opts ["-m" "nrepl.cmdline"
+                        "-b" "0.0.0.0"
+                        "-p" "12345"
+                        "--middleware" "[cider.nrepl/cider-middleware,refactor-nrepl.middleware/wrap-refactor]"]}}}
